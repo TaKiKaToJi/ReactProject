@@ -6,9 +6,9 @@ import styles from './components/styles'
 const App = () => {
   return (
     <View style={styles.container} >
+      <Logo/>
       <Text style={[styles.title,styles.warning]}>HELLO HELLO</Text>
-      <Logo></Logo>
-
+      
     </View>
   )
 }

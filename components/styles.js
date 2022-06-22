@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native-web";
 const styles = StyleSheet.create({
     container:{
+      position:'relative',
       flex:1,
       backgroundColor:"#33ccff",
       alignItems:'center',
@@ -8,6 +9,7 @@ const styles = StyleSheet.create({
     },
   
   title:{
+
   fontSize: 20,
     },
   warning:{
