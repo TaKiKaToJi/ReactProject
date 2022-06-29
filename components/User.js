@@ -7,7 +7,7 @@ const User = () => {
         {id:2,name:"Jeb"}
     ];
   return (
-    <View>
+    <View >
       <Text></Text>
       {
         users.map((user,index)=>{
