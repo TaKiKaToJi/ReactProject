@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         fontSize:40,
         backgroundColor: "#61dafb",
         padding: 10,
-        width:155,
+        width:700,
         textAlign: "center",
         marginBottom: 50,
         paddingVertical: 8,

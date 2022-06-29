@@ -1,16 +1,27 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import Logo from './components/logo'
-import styles from './components/styles'
+import { StyleSheet, Text, View, Button } from "react-native";
+import React from "react";
 
 const App = () => {
-  return (
-    <View style={styles.container} >
-      <Logo/>
-      <Text style={[styles.title,styles.warning]}>HELLO HELLO</Text>
-      
-    </View>
-  )
-}
+  const showDate = () => {
+    alert("Nuke in Coming");
+  };
 
-export default App
+  return (
+    <View style={styles.container}>
+        <Text>Button Example</Text>
+      <Button onPress={showDate} title="Click me" 
+      color='#ff0037'/>
+    </View>
+  );
+};
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor:'gray',
+
+  },
+});
+
+export default App;
