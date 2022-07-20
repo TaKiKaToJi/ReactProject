@@ -7,7 +7,8 @@ import MycustomTextWith from './components/MyCustomTextWith';
 import Count from './components/Count';
 import { StyleSheet } from 'react-native-web';
 import InputText from './components/inputText';
-import UserNamePassword from './components/UserNameandPassWord';
+// import UserNamePassword from './components/UserNameandPassWord';
+import UserNamePassword from './components/UserNamePassword';
 
 const App = () => {
   return (
