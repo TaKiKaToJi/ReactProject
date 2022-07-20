@@ -9,11 +9,19 @@ import { StyleSheet } from 'react-native-web';
 import InputText from './components/inputText';
 // import UserNamePassword from './components/UserNameandPassWord';
 import UserNamePassword from './components/UserNamePassword';
+import AlertComponet from './components/AlertComponet';
+import ImageWithTextInput from './components/ImageWithTextInput';
+import ButtonExample from './components/ButtonExample';
+import Touchable_Example from './components/Touchable_Example';
 
 const App = () => {
   return (
-    <View>
-<UserNamePassword/>
+    <View style={{flex:1}}>
+      {/* <ImageWithTextInput/> */}
+<Touchable_Example/>
+      {/* <ButtonExample/> */}
+{/* <AlertComponet/> */}
+{/* <UserNamePassword/> */}
       {/* <InputText/> */}
         {/* <Count/> */}
         {/* <LotsOfGreetings/> */}
