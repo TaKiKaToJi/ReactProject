@@ -42,12 +42,12 @@ const styles = StyleSheet.create({
     margin: 10,
     marginTop: 30,
     padding: 30,
-    backgroundColor:'red',
+    backgroundColor:'#ded9ca',
   },
   buttonGPlusStyle: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#dc4e41",
+    backgroundColor: "#e85c10",
     borderWidth: 0.5,
     borderColor: "#fff",
     height: 40,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   buttonFacebookStyle: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#485a96",
+    backgroundColor: "#10b6e8",
     borderWidth: 0.5,
     borderColor: "#fff",
     height: 40,
