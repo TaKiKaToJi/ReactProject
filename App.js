@@ -13,12 +13,14 @@ import AlertComponet from './components/AlertComponet';
 import ImageWithTextInput from './components/ImageWithTextInput';
 import ButtonExample from './components/ButtonExample';
 import Touchable_Example from './components/Touchable_Example';
+import TouchablePractice from './components/TouchablePractice';
 
 const App = () => {
   return (
     <View style={{flex:1}}>
+      <TouchablePractice/>
       {/* <ImageWithTextInput/> */}
-<Touchable_Example/>
+{/* <Touchable_Example/> */}
       {/* <ButtonExample/> */}
 {/* <AlertComponet/> */}
 {/* <UserNamePassword/> */}
