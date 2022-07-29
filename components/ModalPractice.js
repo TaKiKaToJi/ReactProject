@@ -1,23 +1,63 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Modal,
+  SafeAreaView,
+  Button,
+} from "react-native";
+import React, { useState } from "react";
 
-const ModalPractice = () => {
+const ModalPratice = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <View>
-      <Text>ModalPractice</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <Modal
+        animationType="fade"
+        transparent={false}
+        visible={showModal}
+        onRequsetClose={() => alert("Model has been closed.")}
+      >
+        <View style={[styles.container]}>
+          <View style={styles.modalView}>
+            <Text style={styles.textStyle}>คุณลืมปิดไฟในห้อง!!!</Text>
+            <Button
+              title="กรุณากดปุ่มเพื่อปิดไฟ"
+              color="#00a9f7"
+              onPress={() => setShowModal(!showModal)}
+            />
+          </View>
+        </View>
+      </Modal>
+      <View style={[styles.container, styles.modalBg]}>
+        <Text style={[styles.textStyle , styles.textcolor01]}>ไฟในห้องปิดอยู่</Text>
+        <Button
+          title="กรุณากดปุ่มเพื่อเปิดไฟอีกครั้ง"
+          color="#f77c00"
+          onPress={() => setShowModal(!showModal)}
+        />
+      </View>
+    </SafeAreaView>
   );
 };
 
-export default ModalPractice;
+export default ModalPratice;
 
 const styles = StyleSheet.create({
-  centeredView: {
+  container: {
     flex: 1,
-    justifyContent: "center",
     alignItems: "center",
-    marginTop: 22,
+    justifyContent: "center",
   },
+
+  modalBg: {
+    backgroundColor: "#000",
+  },
+  textcolor01: {
+    color: "white",
+  },
+
   modalView: {
     margin: 20,
     backgroundColor: "white",
@@ -33,25 +73,13 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 5,
   },
-  button: {
-    borderRadius: 20,
-    padding: 10,
-    elevation: 2,
+  textStyle: {
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 10,
   },
-  buttonOpen: {
-    backgroundColor: "#F194F",
-  },
-  buttonClose: {
-    backgroundColor: "#2196F3",
-  },
-  textStyle: { 
-    color: "white", 
-    fontWeight: "bold", 
-    textAlign: "center" 
-},
-modalText: {
+  modalText: {
     marginBottom: 15,
-    textAlign: 'center',
-},
-
+    textAlign: "center",
+  },
 });

@@ -16,11 +16,13 @@ import Touchable_Example from './components/Touchable_Example';
 import TouchablePractice from './components/TouchablePractice';
 import DynamicStyle from './components/DynamicStyle';
 import ModalExample from './components/ModalExample';
+import ModalPratice from './components/ModalPractice';
 
 const App = () => {
   return (
     <View style={{flex:1}}>
-      <ModalExample/>
+<ModalPratice/>
+      {/* <ModalExample/> */}
       {/* <DynamicStyle/> */}
       {/* <TouchablePractice/> */}
       {/* <ImageWithTextInput/> */}
